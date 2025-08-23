@@ -16,7 +16,7 @@ const courses: Course[] = [
     {
         id: "1",
         title: "Web Development Course",
-        thumbnail: "/images/Web development.png",
+        thumbnail: "/images/Web Development.png",
         videoUrl: "https://youtu.be/ZxKM3DCV2kE?si=VmyQBc7EE2TxbofC"
     },
     {
