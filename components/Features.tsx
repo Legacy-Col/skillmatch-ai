@@ -68,7 +68,7 @@ export default function Features() {
                     viewport={{ once: true }}
                     className="mt-4 text-gray-500 max-w-2xl mx-auto"
                 >
-                    We don't just teach skills — <span className="text-purple-500/50">we connect you to opportunities.</span>
+                    We don&apos;t just teach skills — <span className="text-purple-500/50">we connect you to opportunities.</span>
                 </motion.p>
             </div>
 
