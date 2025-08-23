@@ -3,6 +3,7 @@
 
 import AcademySection from "@/components/Academy";
 import Features from "@/components/Features";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Features />
       <AcademySection />
+      <Footer />
     </main>
   )
 }
