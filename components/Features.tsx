@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { FaUserGraduate, FaRegUser, FaVideo } from "react-icons/fa";
-import { use, useRef } from "react";
+import { useRef } from "react";
 
 
 const features = [
