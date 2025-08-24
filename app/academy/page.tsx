@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { courses } from "@/lib/api/courses";
 import Sidebar from "@/components/academy/Sidebar";
+import Image from "next/image";
 
 
 export default function AcademyPage() {
@@ -47,7 +48,7 @@ export default function AcademyPage() {
                 {/* Grid Card */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:grid-cols-2">
                     {filteredCourses.length > 0 ? (
-                        filteredCourses.map((course, i) => (
+                        filteredCourses.map((course) => (
                             <motion.div
                                 key={course.id}
                                 initial={{ opacity: 0, y: 60 }}
@@ -56,7 +57,7 @@ export default function AcademyPage() {
                                 viewport={{ once: true }}
                                 className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-blue-600/20 hover:shadow-xl"
                             >
-                                <img
+                                <Image
                                     src={course.thumbnail}
                                     alt={course.title}
                                     className="w-full h-48 object-cover"
@@ -76,7 +77,8 @@ export default function AcademyPage() {
                             </motion.div>
                         ))
                     ) : (
-                        <p className="text-center text-gray-500 col-span-full">No Courses Found for "{searchquery}"</p>
+                        <p className="text-center text-gray-500 col-span-full">No Courses Found for &quot;{searchquery}&quot;
+                        </p>
                     )}
                 </div>
             </main>

@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { IoMenu } from "react-icons/io5";
 import { MdMenuOpen } from "react-icons/md";
-import { CiMenuBurger } from "react-icons/ci";
-import { CiMenuFries } from "react-icons/ci";
 
 const navLinks = [
     { label: "Academy", href: "/academy" },
