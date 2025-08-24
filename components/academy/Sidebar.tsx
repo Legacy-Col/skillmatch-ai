@@ -32,7 +32,7 @@ export default function Sidebar() {
                 initial={{ x: -250 }}
                 animate={{ x: open ? 0 : -250 }}
                 transition={{ type: "spring", stiffness: 100 }}
-                className={`${mobileMenu ? "block" : "hidden"} md:block absolute top-0 right-0 h-screen w-60 bg-gray-900/90 text-white z-40 p-6 md:translate-x-0 md:static`}
+                className={`${mobileMenu ? "fixed" : "hidden"} md:block absolute top-0 right-0 h-screen w-60 bg-gray-900/90 text-white z-40 p-6 md:translate-x-0 md:static`}
             >
                 <div className={`transition-all duration-300 fixed ${open ? "w-60" : "w-20"}
                 hidden md:flex flex-col`}>
