@@ -8,3 +8,4 @@ Remember to add a link on the see all courses so it sends the user to the course
 Remember to change the a tags in the footer section to links and also change the features on the navbar to jobs
 Also i should add my social media links to the footer social handles
 Remember to add the dashboard link to the login page so the user can be redirected directly to their dashboard
+Remember when Uploading to vercel and you have an environment variable always go set it in the Environment Variable of the vercel page
