@@ -62,7 +62,8 @@ export default function AcademyPage() {
                                     alt={course.title}
                                     className="w-full h-48 object-cover"
                                     aria-label={course.title}
-                                    fill
+                                    width={450}
+                                    height={450}
                                 />
 
                                 <div className="p-4">
