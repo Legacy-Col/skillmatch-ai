@@ -48,7 +48,9 @@ export default function Navbar() {
                         whileTap={{ scale: 0.95 }}
                         className=" bg-blue-900/60 text-white px-4 font-medium rounded-xl shadow-md shadow-transparent hover:shadow-neutral-100"
                     >
-                        Get Started
+                        <Link href="/register">
+                            Get Started
+                        </Link>
                     </motion.button>
                 </div>
 
@@ -91,7 +93,9 @@ export default function Navbar() {
                                 whileTap={{ scale: 0.95 }}
                                 className=" bg-blue-900/60 text-white px-4 py-4 font-medium rounded-xl shadow-md shadow-transparent hover:shadow-neutral-100"
                             >
-                                Get Started
+                                <Link href="/register">
+                                    Get Started
+                                </Link>
                             </motion.button>
                         </div>
                     </motion.div>
