@@ -45,7 +45,7 @@ export default function DashboardPage() {
                 className="max-w-4xl mx-auto"
             >
                 <h1 className="text-3xl font-serif mb-6">
-                    Welcome back, {session.user?.name || session.user?.email} 👋
+                    {`Welcome back, ${session.user?.name || session.user?.email} 👋`}
                 </h1>
             </motion.div>
 
