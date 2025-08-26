@@ -25,7 +25,7 @@ export default function DashboardPage() {
                     transition={{ duration: 0.6 }}
                     className="text-2xl font-bold mt-4"
                 >
-                    You're not Signed In
+                    You&apos;re not Signed In
                 </motion.h2>
                 <Link
                     className="px-4 py-2 rounded-lg bg-blue-500 text-slate-200 hover:text-blue-600"
