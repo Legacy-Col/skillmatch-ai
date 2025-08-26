@@ -66,7 +66,7 @@ export default function AcademyPage() {
                                     height={450}
                                 />
 
-                                <div className="p-4">
+                                <div className="p-4 space-x-3 gap-2">
                                     <h3 className="text-xl font-semibold">{course.title}</h3>
                                     <p className="text-gray-500 text-sm mt-2 hover:text-blue-700/50">{course.description}</p>
                                     <Link
@@ -75,6 +75,7 @@ export default function AcademyPage() {
                                     >
                                         View Course
                                     </Link>
+
                                 </div>
                             </motion.div>
                         ))

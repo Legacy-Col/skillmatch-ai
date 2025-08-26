@@ -1,10 +1,10 @@
-import NextAuth from "next-auth";
+import NextAuth, { NextAuthOptions } from "next-auth";
 import  CredentialsProvider  from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
 import dbConnect from "@/lib/db";
 import user from "@/lib/models/user";
 
-const handler = NextAuth({
+export const authOptions: NextAuthOptions = {
     providers: [
         CredentialsProvider({
             name: "Credentials",
@@ -34,11 +34,11 @@ const handler = NextAuth({
     },
     secret: process.env.NEXTAUTH_SECRET,
     pages: {
-        signIn: "auth/login,"
+        signIn: "auth/login",
     },
     callbacks: {
         async jwt({ token, user }) {
-            if (token) token.id = user.id;
+            if (user) token.id = user.id;
             return token;
         },
         async session({ session, token }) {
@@ -48,8 +48,9 @@ const handler = NextAuth({
             return session;
         },
     },
-});
+};
 
+const handler = NextAuth(authOptions)
 export { handler as GET, handler as POST };
 
 //This handles the user Sessions and the token setting the users credentials and also granting them authorization

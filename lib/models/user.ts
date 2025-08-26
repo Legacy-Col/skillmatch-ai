@@ -5,7 +5,10 @@ const UserSchema = new Schema(
         name: { type: String, trim: true },
         email: { type: String, required: true, unique: true },
         password: { type: String, required: true },
-        bookmarks: [{type: Schema.Types.ObjectId, ref: "Course"}]
+        bookmarks: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Course"
+        }]
     },
     {timestamps: true}
 )
