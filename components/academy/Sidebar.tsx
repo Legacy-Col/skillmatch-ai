@@ -37,8 +37,9 @@ export default function Sidebar() {
                 <div className={`transition-all duration-300 fixed ${open ? "w-60" : "w-20"}
                 hidden md:flex flex-col`}>
                     {/* For the Logo */}
-
-                    <h2 className={`text-2xl font-bold mb-6 whitespace-nowrap overflow-hidden transition-all ${open ? "opacity-100" : "opacity-0"}`}>SkillMatch AI</h2>
+                    <Link href="/" className="cursor-pointer">
+                        <h2 className={`text-2xl font-bold mb-6 whitespace-nowrap overflow-hidden transition-all ${open ? "opacity-100" : "opacity-0"}`}>SkillMatch AI</h2>
+                    </Link>
 
                     {/* For the NavLinks */}
 

@@ -15,7 +15,7 @@ export default async function dbConnect() {
         await mongoose.connect(MONGODB_URI, {
             dbName: "skillmatch",
         });
-        isConnected = true;
+        isConnected = mongoose.connections[0].readyState === 1;
         console.log("✅ MongoDB connected")
     } catch (err) {
 console.log("❌ MongoDB connection error:", err)

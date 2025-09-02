@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import normalizeYoutubeLink from "@/lib/util/helper";
+import Link from "next/link";
 
 
 type Course = {
@@ -103,9 +104,11 @@ export default function AcademySection() {
                     className="mt-12 text-center"
                     viewport={{ once: true }}
                 >
-                    <button className="bg-gradient-to-r from-blue-600 to-purple-500 px-6 py-3 rounded-xl font-medium shadow-lg hover:opacity-90 transition">
-                        See All Courses
-                    </button>
+                    <Link href="/academy">
+                        <button className="bg-gradient-to-r from-blue-600 to-purple-500 px-6 py-3 rounded-xl font-medium shadow-lg hover:opacity-90 transition">
+                            See All Courses
+                        </button>
+                    </Link>
                 </motion.div>
             </div>
 
